@@ -1,0 +1,169 @@
+body {
+	background: url('../img/background.png');
+	/* style général */
+	font-size: 1em;
+	font-family: Arial, sans-serif;
+	color: #333;
+	
+	
+}
+/* Conteneur général */
+.conteneur {
+	width: 100%;
+	margin: auto;
+	background: url(../img/rainbow.png) no-repeat;
+	background-position-x: 47%;
+    background-position-y: 8%;
+}
+
+@media all and (max-width: 1024px)
+{
+    .conteneur
+    {
+        width: 100%;
+    }
+}
+
+/* conteneur partie centrale */
+.container-main {
+	border: 1px solid black;
+	border-radius: 15px;
+	background: #fff;
+	width: 1220px;
+	min-height: 1290px;
+	margin: auto; /* centrage du bloc */
+}
+
+
+
+/* titres au style commun */
+
+h3,h4 {
+	color:#EB43A3;
+	font-family: 'Courgette', cursive;
+	margin: 0;
+	padding: 30px 0px;
+}
+
+h3 {
+	margin-left: 10px;
+}
+
+
+/* ***************partie HEADER(+ contient la NAV) *************************/
+header {
+	background: #C55394;
+	color: #fff;
+	min-height: 66px;
+	max-height: 80px;
+	width: 100%;
+	display: flex; /* placement horizontal */
+	justify-content: space-between; /* axe principal(ici horizontal) avec espace entre les éléments */
+}
+
+.unicorn { /* classe donnée au h1 */
+	font-size: 2em;
+	font-family: 'Courgette', cursive;
+}
+
+ /* nav */
+nav ul {
+	list-style-type: none; /* disparition des puces */
+	display: flex; 
+	line-height: 40px;
+}
+nav ul li{
+	padding: 5px; /* espace entre les éléments de liste */
+	margin: 0;
+}
+nav ul li:hover {
+	background: #EB43A3;
+	
+	
+	
+}
+/* ***********Fin header */
+
+
+
+/* Partie Arc en ciel */
+.rainbow {
+	min-height: 190px;
+	
+}
+
+.titre-partie-centrale {
+	text-align: center;
+	color:#C55394;
+	font-family: 'Courgette', cursive;
+	position: relative;
+    top: 111px;
+}
+
+/* ************************* MAIN   ******************/
+
+/* partie 1 "le principe */
+
+.star {
+	padding-right: 10px;
+}
+.principe p {
+	margin-left: 10px;
+}
+
+/* partie 2 "images Nos licornes */
+
+/* artcle images */
+.img-licornes{
+	display: flex;
+}
+#titre-img {
+	margin-left: 10px;
+}
+figure{
+	margin: 0;
+	padding: 45px 12px;
+	overflow: hidden;
+}
+figure img {
+	width: 275px;
+	height: 275px;
+}
+figcaption{
+	text-align: center;
+	background: #494D4F;
+	opacity: 0.9;
+	color: #fff;
+	position: relative;
+	bottom: 41px;
+	padding: 10px;
+	
+	transition: .6s;
+}
+figure:hover figcaption {
+	transform: scale(1,2.5);
+	font-size: 1.7em;
+	color: #2980b9;
+}
+
+/* partie 3 coordonnees */
+#cont {
+	margin-left: 28px;
+}
+.coordonnees{
+	display: flex;
+    justify-content: space-around;
+}
+
+
+
+/**************   FOOTER  ************/
+
+footer{
+	min-height: 50px;
+	width: 100%;
+	text-align: right;
+	background: #E577B5;
+	color: #fff;
+	margin-top: 70px;
+}
